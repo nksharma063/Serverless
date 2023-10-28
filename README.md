@@ -39,5 +39,22 @@
 
     Provide a name for your rule and, if needed, a description.
 
+## Assignment 4
+    S3 Setup:
+
+Navigate to the S3 dashbord and creat a few buckets. Ensure that a coupl of them don't have server-sid encryption enabld.
+Lambda IAM Role:
+
+In the IAM dashbord, creat a new role for Lambda. Attch the AmazonS3ReadOnlyAccess policy to this role.
+
+Lambda Function:
+Navigate to the Lambda dashbord and creat a new function.
+
+    Choos Python 3.x as the runtime.
+    Initiate a boto3 S3 client.
+    List all S3 buckets.
+    Detect buckets without server-sid encryption.
+    Print the names of unencryptd buckets for logging purposes.
+Manual Invokation:
     Finally, click the "Create rule" button to create the CloudWatch Events rule
 
